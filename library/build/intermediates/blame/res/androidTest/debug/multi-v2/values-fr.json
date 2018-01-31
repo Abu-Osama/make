@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\advjava\\MakeMyHallN3\\library\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-fr\\values-fr.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Abu Osama\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\ce693a43583c60a03fcc938057b4db32\\res\\values-fr\\values-fr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "17",
+                        "startColumns": "4",
+                        "startOffsets": "1175",
+                        "endColumns": "100",
+                        "endOffsets": "1271"
+                    }
+                },
+                {
+                    "source": "D:\\advjava\\MakeMyHallN3\\library\\build\\intermediates\\bundles\\debug\\res\\values-fr\\values-fr.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,168,250,345,397,438,524,631,720,775,851,921,994,1062,1101",
+                        "endColumns": "62,81,94,51,40,85,106,88,54,75,69,72,67,38,73",
+                        "endOffsets": "163,245,340,392,433,519,626,715,770,846,916,989,1057,1096,1170"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "175296286554",
+    "firebase_url": "https://makemyhall-2d081.firebaseio.com",
+    "project_id": "makemyhall-2d081",
+    "storage_bucket": "makemyhall-2d081.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175296286554:android:74204c270562ab0a",
+        "android_client_info": {
+          "package_name": "com.dcmindia.app.makemyhall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175296286554-ot1lbc27rdurbtom76o9ljjm9k5pirek.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dcmindia.app.makemyhall",
+            "certificate_hash": "ff3d8452522d5cfa152a84a5972a9e74b6d6a1e2"
+          }
+        },
+        {
+          "client_id": "175296286554-gs9olo9l484ata1vvdbj3f887e3nabt5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRz6Xh9JV0h4XiL1NYujrWcIGAGuWgJlk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175296286554-gs9olo9l484ata1vvdbj3f887e3nabt5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

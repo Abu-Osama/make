@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    app:layout_editor_absoluteX="0dp"
+    app:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp"
+    android:orientation="vertical"
+    tools:context="makemyhall.app.dcmindia.com.makemyhalln3.LocationSelectActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:id="@+id/detectlocation"-->
+            <!--android:text="detectuserlocation"/>-->
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_editor_absoluteX="10dp"
+        app:layout_editor_absoluteY="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_creator="1"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="India"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="16dp" />
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="location"-->
+        <!--android:id="@+id/current_address"/>-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/bangalore"
+            android:layout_width="40dp"
+            android:layout_weight="1"
+            android:layout_height="140dp"
+            android:background="@drawable/banlocationxml"
+            android:layout_marginLeft="3dp"
+            android:text="@string/Bangalore"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="110dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/chennai"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_editor_absoluteX="10dp"
+            app:layout_editor_absoluteY="100dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <TextView
+            android:id="@+id/chennai"
+            android:layout_width="40dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent"
+            android:layout_height="140dp"
+            android:background="@drawable/cheenailocationxml"
+            android:inputType="textPersonName"
+            android:text="@string/Chennai"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="110dp"
+            android:textSize="15sp"
+            app:layout_editor_absoluteX="200dp"
+            app:layout_editor_absoluteY="100dp" />
+        <TextView
+            android:id="@+id/mumbai"
+            android:layout_width="40dp"
+            android:layout_weight="1"
+            android:layout_height="140dp"
+            android:background="@drawable/banlocationxml"
+            android:inputType="textPersonName"
+            android:paddingTop="110dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:layout_marginRight="3dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/Mumbai"
+            android:textSize="15sp"
+            app:layout_editor_absoluteX="170dp"
+            app:layout_editor_absoluteY="100dp" />
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/pune"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/locatiobtn"
+            android:inputType="textPersonName"
+            android:padding="20sp"
+            android:textColor="#FFF"
+            android:layout_marginRight="3dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/Pune"
+            android:textSize="15sp"
+            app:layout_editor_absoluteX="170dp"
+            app:layout_editor_absoluteY="100dp" />
+        <TextView
+            android:id="@+id/hyderabad"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/locatiobtn"
+            android:inputType="textPersonName"
+            android:padding="20sp"
+            android:textColor="#FFF"
+            android:layout_marginRight="3dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/Hyderabad"
+            android:textSize="15sp"
+            app:layout_editor_absoluteX="170dp"
+            app:layout_editor_absoluteY="100dp" />
+        <TextView
+            android:id="@+id/mysore"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/locatiobtn"
+            android:inputType="textPersonName"
+            android:padding="20sp"
+            android:textColor="#FFF"
+            android:layout_marginRight="3dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/Mysore"
+            android:textSize="15sp"
+            app:layout_editor_absoluteX="170dp"
+            app:layout_editor_absoluteY="100dp" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

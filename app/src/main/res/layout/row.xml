@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#d3d1d1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        app:cardElevation="3dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="3dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutidfordetail"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:clickable="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/hallimageview"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/backgroundrow"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/myshape1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hallnametext1"
+                    android:maxLines="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="some text"
+                    android:textSize="16sp" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:numStars="5"
+                    android:isIndicator="true"
+                    android:progressTint="@color/colorPrimary"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:stepSize="2"
+                    android:id="@+id/ratingbar"
+                    android:rating="3.6"/>
+                   <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/halladdtext2"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="some text"
+                    android:textColor="#000"
+                    android:textSize="12sp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:id="@+id/hallpricetext3"
+                    android:layout_marginLeft="5dp"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp"
+                    android:ellipsize="end"
+                    android:text="@string/Rs"
+                    android:textColor="#FF9911"
+                    android:textSize="19sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:id="@+id/quickbooking"
+                    android:layout_marginLeft="5dp"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:layout_marginRight="100dp"
+                    android:text="Book"
+                    android:padding="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/myshapequickbooing"
+                    android:textColor="#FFF"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

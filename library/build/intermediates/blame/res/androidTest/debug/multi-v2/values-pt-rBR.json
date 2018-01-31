@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\advjava\\MakeMyHallN3\\library\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
+            "map": [
+                {
+                    "source": "D:\\advjava\\MakeMyHallN3\\library\\build\\intermediates\\bundles\\debug\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,168,246,341,391,432,515,622,709,764,819,887,950,1019,1080,1121",
+                        "endColumns": "62,77,94,49,40,82,106,86,54,54,67,62,68,60,40,71",
+                        "endOffsets": "163,241,336,386,427,510,617,704,759,814,882,945,1014,1075,1116,1188"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Abu Osama\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\ce693a43583c60a03fcc938057b4db32\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "1193",
+                        "endColumns": "100",
+                        "endOffsets": "1289"
+                    }
+                }
+            ]
+        }
+    ]
+}

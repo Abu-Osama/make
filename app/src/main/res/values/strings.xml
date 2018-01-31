@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">MakeMyHall</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="hallname">hallname</string>
+    <string name="event">Event Hall</string>
+    <string name="meetinghall">meeting Hall</string>
+    <string name="conferencehall">conference Hall</string>
+    <string name="exhibition">Exhibition Hall</string>
+    <string name="party">party Hall</string>
+    <string name="marriegehall">Marriage Hall</string>
+    <string name="check">check internet connection</string>
+    <string name="process">Processing...</string>
+
+
+    <string name="Back">Back</string>
+    <string name="Home">Home</string>
+    <string name="search">search</string>
+    <string name="location">detect my Current location</string>
+
+
+    <string name="home">Home</string>
+    <string name="contact">Contact</string>
+    <string name="info">More info</string>
+    <string name="Rs">\u20B9\100</string>
+    <string name="Rsforhall">\u20B9\2000</string>
+    <string name="spin">All category</string>
+    <string name="country_prompt">Choose a country</string>
+    <string name="autocomplete_hint">Search a Place</string>
+
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="link"> Wedding &amp; Events </string>
+    <string name="TopServices">Top Services</string>
+
+    <string name="no_location_detected">
+        No location detected. Make sure location is enabled on the device.
+    </string>
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="settings">Settings</string>
+
+
+    <string name="no_geocoder_available">No geocoder available</string>
+
+    <string name="fetch_address">Fetch address</string>
+
+    <string name="address_found">Address found</string>
+
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+
+    <string name="BankDeposit">Bank Deposit</string>
+    <string name="AccountName">Account Name</string>
+    <string name="AccountName1">Auro Make My Hall PVT LTD</string>
+
+    <string name="BankName">Bank Name</string>
+    <string name="BankName1">HDFC Bank</string>
+
+    <string name="AccountNumber">AccountNumber</string>
+    <string name="AccountNumber1">50200025264933</string>
+
+    <string name="IFSCCode">IFSCCODE</string>
+    <string name="IFSCCode1">HDFC0000523</string>
+
+    <string name="BranchName">BranchName</string>
+
+    <string name="BranchName1">RICHMOND ROAD BRANCH</string>
+    <string name="bookappointment">Support </string>
+
+    <string name="Bangalore">Bangalore</string>
+    <string name="Chennai">Chennai</string>
+    <string name="Mumbai">Mumbai</string>
+    <string name="Pune">Pune</string>
+    <string name="Hyderabad">Hyderabad</string>
+    <string name="Mysore">Mysore</string>
+    <string name="ViewAll51Services">View All 51 Services</string>
+
+    <string name="bandsets">Band set</string>
+    <string name="ethnicwear">ethnic wear</string>
+    <string name="caterers">caterers</string>
+    <string name="coconutmerchants">coconut merchants</string>
+    <string name="coffeesuppliers">coffee suppliers</string>
+    <string name="condimentsTraditional">condiments &amp; Traditional foods</string>
+    <string name="dairyproduct">dairy product</string>
+    <string name="detectiveservices">detectiveservices</string>
+    <string name="photographers">Wedding Photographer</string>
+    <string name="entertainment">entertainment</string>
+    <string name="vediographer">vediographer</string>
+    <string name="Flowerdecorators">Flower decorators</string>
+    <string name="FruitMerchants">Fruit Merchants</string>
+    <string name="Furniture">Furniture</string>
+    <string name="Gasservices">Gas services</string>
+    <string name="gentsbeautysaloon">Beauty salon</string>
+    <string name="giftitems">gift items</string>
+    <string name="Horseproviders">Horse providers</string>
+    <string name="Hotels">Hotels</string>
+    <string name="Icecreamsuppliers">Ice cream suppliers</string>
+    <string name="JewelleryHires">Jewellery Hires</string>
+    <string name="Lights">Lights</string>
+    <string name="Mehendi">Mehendi</string>
+    <string name="MenSuiting">Men Suiting</string>
+    <string name="Beautyparlor">Beauty parlor</string>
+    <string name="resort">resort</string>
+    <string name="BridalMakeupArtist">Bridal Makeup Artist</string>
+    <string name="PreweddingShoot">Pre-wedding Shoot</string>
+    <string name="GeneratorHires">Generator Hires</string>
+    <string name="GentsBeautySaloon">Gents Beauty Saloon</string>
+    <string name="GiftItems">Gift Items</string>
+    <string name="HorseProviders">Horse Providers</string>
+    <string name="MatrimonialServices">Matrimonial Services</string>
+    <string name="MenTailoring">Men Tailoring</string>
+    <string name="MilkSuppliers">Milk Suppliers</string>
+    <string name="MineralWaterSuppliers">Mineral Water Suppliers</string>
+    <string name="Nadaswara">Nadaswara</string>
+    <string name="NurseryFlowerPots">Nursery Flower Pots</string>
+    <string name="Orchestra">Orchestra</string>
+    <string name="PanLeaf">Pan Leaf</string>
+    <string name="PlantainLeaf">Plantain Leaf</string>
+    <string name="PlasticPaperbags">Plastic &amp; Paper bags</string>
+    <string name="PoojaItems">Pooja Items</string>
+    <string name="Printers">Printers</string>
+    <string name="Provisions">Provisions</string>
+    <string name="Resorts">Resorts</string>
+    <string name="Silksarees">Silk Sarees</string>
+    <string name="SoftDrinks">Soft Drinks</string>
+    <string name="Sweets">Sweets</string>
+    <string name="TentsSuppliers">Tents Suppliers</string>
+    <string name="ToursTravellers">Tours &amp; Travellers</string>
+    <string name="Turbans">Turbans</string>
+    <string name="Videography">Videography</string>
+    <string name="WaterSuppliers">Water Suppliers</string>
+    <string name="WeddingCards">Wedding Cards</string>
+
+
+    <string name="CustomerName">Customer Name</string>
+    <string name="entername">enter name</string>
+    <string name="customermobile">customer mobile</string>
+    <string name="entermobilenumber">enter mobile number</string>
+    <string name="customeremailId">customer emailId</string>
+    <string name="enteremaildid">enter emaild id</string>
+
+    <string name="MarriageHall">MarriageHall</string>
+    <string name="PartyHall">PartyHall</string>
+    <string name="ExhibitionHall">ExhibitionHall</string>
+    <string name="ConferenceHall1">ConferenceHall</string>
+    <string name="MeetingHall">MeetingHall</string>
+    <string name="EventHall">EventHall</string>
+
+    <string name="Fromdate">From date</string>
+    <string name="Todate">To date</string>
+    <string name="CHECKIN">CHECK-IN</string>
+    <string name="selectcategory">select category</string>
+    <string name="searchLocation">search Location</string>
+    <string name="DESTINATION">DESTINATION</string>
+    <string name="search1">search</string>
+    <string name="payoffline">pay offline</string>
+    <string name="payonline">pay online</string>
+    <string name="title_activity_calender">CalenderActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+</resources>

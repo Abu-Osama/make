@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:design="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/htab_maincontent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/htab_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/htab_collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:titleEnabled="false">
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:id="@+id/htab_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/sliderimg"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.3"
+                android:background="@android:color/black"
+                android:fitsSystemWindows="true"/>
+            </ViewFlipper>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/htab_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="top"
+                android:layout_marginBottom="20dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/htab_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:tabIndicatorColor="@color/primary_500"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextColor="@color/white"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headernew"
+            android:clipToPadding="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:id="@+id/cardviewnew"
+                    android:layout_margin="3dp"
+                    app:cardElevation="3dp"
+                    android:elevation="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="2"
+
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:clickable="false"
+                            android:background="@drawable/myshape1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/hotelname"
+                                android:maxLines="1"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:ellipsize="end"
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:text="some text"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/hoteladdress"
+                                android:layout_marginLeft="5dp"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:text="some text"
+                                android:textColor="#000"
+                                android:textSize="12sp"/>
+
+
+
+                            <RatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:numStars="5"
+                                android:isIndicator="true"
+                                android:progressTint="@color/colorPrimary"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:stepSize="2"
+                                android:rating="3.6"/>
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:id="@+id/hotelprice"
+                                android:layout_marginLeft="5dp"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="4dp"
+                                android:ellipsize="end"
+                                android:text="@string/Rs"
+                                android:textColor="#8FB442"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:background="@drawable/myshape1"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+
+
+                            <TextView
+                                android:layout_width="46dp"
+                                android:layout_height="35dp"
+                                android:id="@+id/hallinfolocation"
+                                android:gravity="center"
+                                android:scaleType="fitXY"
+                                android:layout_marginRight="30dp"
+                                android:layout_gravity="center"
+                                android:maxLines="1"
+                                android:background="@drawable/ic_place_black_24dp"
+                                android:textAlignment="center"
+                                android:layout_marginTop="20dp"
+                                android:textColor="#000"
+                                android:padding="2dp"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:padding="30dp"
+                    android:layout_margin="3dp"
+                    app:cardElevation="3dp"
+                    android:elevation="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/myshape1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/hotelfullprice"
+                                    android:maxLines="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:ellipsize="end"
+                                    android:textColor="#000"
+                                    android:textStyle="normal"
+                                    android:text="total price"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/hotelfullprice1"
+                                    android:maxLines="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:ellipsize="end"
+                                    android:textColor="#000"
+                                    android:textStyle="normal"
+                                    android:text="@string/Rsforhall"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/hoteldiscount"
+                                    android:maxLines="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:ellipsize="end"
+                                    android:textColor="#000"
+                                    android:textStyle="normal"
+                                    android:text="discount"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/halldiscount"
+                                    android:maxLines="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:ellipsize="end"
+                                    android:textColor="#000"
+                                    android:textStyle="normal"
+                                    android:text="@string/Rsforhall"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/hoteltotal"
+                                    android:maxLines="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:ellipsize="end"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:text="total payable"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/hotelfullamount"
+                                    android:maxLines="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:ellipsize="end"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:text="@string/Rsforhall"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp"
+                    android:layout_margin="3dp"
+                    app:cardElevation="3dp"
+                    android:elevation="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_marginTop="7dp"
+                        android:padding="20dp"
+                        android:weightSum="3">
+
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bandsets"
+
+                            />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:text="@string/ethnicwear"
+
+                            />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/caterers"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_marginTop="7dp"
+                            android:padding="18dp"
+                            android:weightSum="3">
+
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/coconutmerchants"
+
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/coffeesuppliers"
+
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/condimentsTraditional"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_marginTop="7dp"
+                            android:padding="18dp"
+                            android:weightSum="3">
+
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dairyproduct"
+
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/detectiveservices"
+
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/photographers"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_marginTop="7dp"
+                            android:padding="18dp"
+                            android:weightSum="3">
+
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/entertainment"
+
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/vediographer"
+
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Flowerdecorators"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_marginTop="7dp"
+                            android:padding="18dp"
+                            android:weightSum="3">
+
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/FruitMerchants"
+
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Furniture"
+
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Gasservices"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_marginTop="7dp"
+                            android:padding="18dp"
+                            android:weightSum="3">
+
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/gentsbeautysaloon"
+
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/giftitems"
+
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Horseproviders"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_marginTop="7dp"
+                            android:padding="18dp"
+                            android:weightSum="3">
+
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Hotels"
+
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Icecreamsuppliers"
+
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/JewelleryHires"
+
+                                />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray" />
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_marginTop="7dp"
+                            android:padding="18dp"
+                            android:weightSum="3">
+
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Lights"
+
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Mehendi"
+
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:maxLines="2"
+                                android:layout_height="wrap_content"
+                                android:text="@string/MenSuiting"
+
+                                />
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:layout_margin="1dp"
+                    app:cardElevation="3dp"
+                    android:elevation="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/callhallinfo"
+                        android:background="#E91E63"
+                        android:textColor="#FFF"
+                        android:layout_height="wrap_content"
+                        android:text="call"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/bookhall"
+                        android:textColor="#FFF"
+                        android:layout_marginLeft="5dp"
+                        android:background="#E91E63"
+                        android:layout_height="wrap_content"
+                        android:text="book"/>
+
+
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+
+        </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+    </ScrollView>

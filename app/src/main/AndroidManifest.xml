@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="makemyhall.app.dcmindia.com.makemyhalln3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".FlashActivityNew"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".GetAddressIntentService"
+            android:exported="false" />
+
+        <activity android:name=".LocationSelectActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TabsHeaderActivity"
+            android:theme="@style/MyTheme.Detail" />
+        <activity
+            android:name=".PlacesAutoCompleteActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".DetailsActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAlf13dZTb1vy6CywSDJog1C7TdhaB1yXE" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAlf13dZTb1vy6CywSDJog1C7TdhaB1yXE" />
+
+        <activity
+            android:name=".ActivityForLocation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AllItemServices" />
+        <activity
+            android:name=".CategoryList"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivityLocationResult" />
+        <activity android:name=".BookingActivity" />
+        <activity android:name=".MyActivity" />
+        <activity android:name=".BookingInfo" />
+        <activity android:name=".PayOfflineDetails" />
+        <activity
+            android:name="com.dcmindia.app.makemyhall.CalenderActivity"
+            android:label="@string/title_activity_calender"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
